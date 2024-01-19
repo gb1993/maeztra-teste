@@ -22,15 +22,15 @@ Para configurar o projeto localmente, siga estas etapas:
 
 2. Navegue até o diretório do projeto:
 
-```bash
-cd desafio-maeztra
-```
+  ```bash
+  cd desafio-maeztra
+  ```
 
 3. Instale as dependências:
 
-```bash
-yarn ou npm install
-```
+  ```bash
+  yarn ou npm install
+  ```
 
 ## Execução
 
@@ -38,17 +38,17 @@ Após a instalação, você pode executar o projeto utilizando os seguintes coma
 
 Desenvolvimento:
 
-```bash
+  ```bash
   npm run dev ou yarn dev
-```
+  ```
 
 Isso iniciará o servidor de desenvolvimento Vite.
 
 Build para produção:
 
-```bash
+  ```bash
   npm run build
-```
+  ```
 
 Compila o projeto para produção.
 
