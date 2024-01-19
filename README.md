@@ -16,21 +16,21 @@ Para configurar o projeto localmente, siga estas etapas:
 
 1. Clone o repositório:
 
-   ```bash
-   git clone https://url-do-repositorio.com/desafio-maeztra.git
-   ```
+```bash
+git clone https://url-do-repositorio.com/desafio-maeztra.git
+```
 
 2. Navegue até o diretório do projeto:
 
-  ```bash
-  cd desafio-maeztra
-  ```
+```bash
+cd desafio-maeztra
+```
 
 3. Instale as dependências:
 
-  ```bash
-  yarn ou npm install
-  ```
+```bash
+yarn ou npm install
+```
 
 ## Execução
 
@@ -38,19 +38,11 @@ Após a instalação, você pode executar o projeto utilizando os seguintes coma
 
 Desenvolvimento:
 
-  ```bash
-  npm run dev ou yarn dev
-  ```
+```bash
+npm run dev ou yarn dev
+```
 
 Isso iniciará o servidor de desenvolvimento Vite.
-
-Build para produção:
-
-  ```bash
-  npm run build
-  ```
-
-Compila o projeto para produção.
 
 ## Tecnologias Principais
 
