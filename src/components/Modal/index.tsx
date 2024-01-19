@@ -1,17 +1,38 @@
-import { useState } from "react";
+import React, { useState, useEffect, MouseEvent } from "react";
 import { ModalNLIcon, SendIcon } from "../../assets/icons";
 import modalBanner from "../../assets/images/modal-banner.png";
 
-const Modal = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  const handleClose = () => {
+const Modal: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(true);
+
+  const handleClose = (): void => {
     setIsOpen(false);
   };
+
+  const handleClickOutside = (event: MouseEvent<HTMLDialogElement>): void => {
+    if (event.target === event.currentTarget) {
+      handleClose();
+    }
+  };
+
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = isOpen ? "hidden" : originalStyle;
+
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, [isOpen]);
+
   if (!isOpen) {
     return null;
   }
+
   return (
-    <dialog className="w-full h-screen flex z-20 bg-black bg-opacity-70 p-8">
+    <dialog
+      className="w-full h-screen flex z-20 bg-black bg-opacity-70 p-8"
+      onClick={handleClickOutside}
+    >
       <div className="relative flex items-center justify-center max-w-[848px] w-full m-auto bg-white">
         <button
           className="absolute -top-5 right-0 text-white text-xs uppercase"
@@ -40,6 +61,7 @@ const Modal = () => {
               id="nl"
               className="border-[#C4C4C4] border w-full p-3 rounded-[10px] h-10 outline-none mb-3 text-xs"
               placeholder="Digite seu e-mail"
+              required
             />
             <button
               type="submit"

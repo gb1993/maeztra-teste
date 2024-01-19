@@ -12,6 +12,7 @@ const FooterTop = () => {
             id="nl"
             className="pl-6 text-xs h-10 w-[200px] md:w-[468px] outline-none border-color-2-500 border rounded"
             placeholder="Digite seu email"
+            required
           />
           <button
             type="submit"
