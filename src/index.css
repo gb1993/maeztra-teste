@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+  @apply bg-transparent border-color-1-500 border md:w-4 md:h-4 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-color-1-500;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply after:hidden w-5;
+}
+
+.swiper-button-next {
+  @apply right-7 md:right-40;
+}
+
+.swiper-button-prev {
+  @apply left-7 md:left-40;
+}
+
+.shelf-swiper-button-prev,
+.shelf-swiper-button-next {
+  @apply absolute top-1/2 z-10;
+}
+
+.shelf-swiper-button-prev {
+  @apply left-0;
+}
+.shelf-swiper-button-next {
+  @apply right-0;
+}
