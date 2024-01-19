@@ -2,8 +2,8 @@ import newCollectionBanner from "../../assets/images/newcollection-banner.png";
 
 const NewCollection = () => {
   return (
-    <section className="w-full px-6 mb-20 flex md:flex-row flex-col items-center justify-center max-w-3xl m-auto gap-6 md:gap-20">
-      <div className="w-full">
+    <section className="w-full px-6 mb-20 flex md:flex-row flex-col items-center justify-center max-w-3xl m-auto gap-6 md:gap-16">
+      <div className="">
         <h2 className="font-bold text-2xl mb-4">Lorem ipsum</h2>
         <p className="text-sm md:w-[420px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
